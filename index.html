@@ -115,6 +115,16 @@
   .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
   .card p { color: var(--muted); font-size: .95rem; }
 
+  .notice {
+    max-width: 720px; padding: 24px 28px;
+    border-radius: 18px; border: 1px solid rgba(255, 190, 80, .35);
+    border-left: 4px solid #ffb84d;
+    background: rgba(255, 184, 77, .07);
+  }
+  .notice p { color: var(--muted); }
+  .notice p + p { margin-top: 12px; }
+  .notice strong { color: var(--text); }
+
   .final {
     margin: 96px 0 0; padding: 56px 24px; text-align: center;
     border-radius: 28px; border: 1px solid var(--border);
@@ -138,6 +148,7 @@
     <div class="links">
       <a href="#about">About</a>
       <a href="#features">Features</a>
+      <a href="#disclaimer">Disclaimer</a>
       <a href="#download">Download</a>
     </div>
   </div>
@@ -180,6 +191,15 @@
       <div class="card"><div class="icon">🎮</div><h3>Runs classics</h3><p>Launch DOS-era games like DOOM, and run 3D-accelerated demos such as 3D Gears.</p></div>
       <div class="card"><div class="icon">📁</div><h3>File manager</h3><p>Browse drives and CD-ROMs, and launch programs with a double-click.</p></div>
       <div class="card"><div class="icon">⚡</div><h3>Lightweight</h3><p>Small footprint and quick to boot, even on modest hardware or in a VM.</p></div>
+    </div>
+  </section>
+
+  <section id="disclaimer">
+    <div class="eyebrow">Disclaimer</div>
+    <h2>Please read before you run it.</h2>
+    <div class="notice">
+      <p>Everything in fluxOS, including its code, was made with <strong>Claude</strong>, an AI model by Anthropic. It is an experimental project and has not been audited or thoroughly tested.</p>
+      <p><strong>Do not run fluxOS on your main computer.</strong> Only run it inside a virtual machine or emulator, or on a secondary computer that holds nothing important. It is provided as is, with no warranty, and you use it at your own risk.</p>
     </div>
   </section>
 
