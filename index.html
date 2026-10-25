@@ -125,6 +125,8 @@
   .notice p + p { margin-top: 12px; }
   .notice strong { color: var(--text); }
 
+  .plain { max-width: 680px; color: var(--muted); font-size: 1.05rem; }
+
   .final {
     margin: 96px 0 0; padding: 56px 24px; text-align: center;
     border-radius: 28px; border: 1px solid var(--border);
@@ -146,10 +148,11 @@
   <div class="wrap">
     <a class="brand" href="#top"><img src="logo.png" alt="">fluxOS</a>
     <div class="links">
+      <a href="#disclaimer">Disclaimer</a>
       <a href="#about">About</a>
       <a href="#features">Features</a>
-      <a href="#disclaimer">Disclaimer</a>
       <a href="#download">Download</a>
+      <a href="#donations">Donations</a>
     </div>
   </div>
 </nav>
@@ -175,6 +178,15 @@
 </header>
 
 <main class="wrap">
+  <section id="disclaimer">
+    <div class="eyebrow">Disclaimer</div>
+    <h2>Please read before you run it.</h2>
+    <div class="notice">
+      <p>Everything in fluxOS, including its code, was made with <strong>Claude</strong>, an AI model by Anthropic. It is an experimental project and has not been audited or thoroughly tested.</p>
+      <p><strong>Do not run fluxOS on your main computer.</strong> Only run it inside a virtual machine or emulator, or on a secondary computer that holds nothing important. It is provided as is, with no warranty, and you use it at your own risk.</p>
+    </div>
+  </section>
+
   <section class="about" id="about">
     <div class="eyebrow">About</div>
     <h2>A small OS with a big personality.</h2>
@@ -194,15 +206,6 @@
     </div>
   </section>
 
-  <section id="disclaimer">
-    <div class="eyebrow">Disclaimer</div>
-    <h2>Please read before you run it.</h2>
-    <div class="notice">
-      <p>Everything in fluxOS, including its code, was made with <strong>Claude</strong>, an AI model by Anthropic. It is an experimental project and has not been audited or thoroughly tested.</p>
-      <p><strong>Do not run fluxOS on your main computer.</strong> Only run it inside a virtual machine or emulator, or on a secondary computer that holds nothing important. It is provided as is, with no warranty, and you use it at your own risk.</p>
-    </div>
-  </section>
-
   <section id="download" style="padding-bottom:0">
     <div class="final">
       <div class="eyebrow">Get started</div>
@@ -219,6 +222,12 @@
         </a>
       </div>
     </div>
+  </section>
+
+  <section id="donations" style="padding-bottom:0">
+    <div class="eyebrow">Donations</div>
+    <h2>Donations</h2>
+    <p class="plain">fluxOS does not currently accept donations. This entire project (save for the branding) was created by Claude, not me, and I'm not gonna profit off of work I didn't create. Please consider donating to human-made open source projects instead, as this wouldn't have been possible without the groundwork laid out by humans.</p>
   </section>
 </main>
 
